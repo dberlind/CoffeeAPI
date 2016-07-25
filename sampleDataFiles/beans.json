@@ -1,0 +1,86 @@
+"beans" : [
+    {
+      "beanProductID"     : "001",
+      "beanProductName"   : "Espresso Dark Roast Arabica USDA Organic",
+      "beanSpecies"       : "Arabica",
+      "beanOriginRegion"  : "Latin America",
+      "beanOriginCountry" : "Guatemala",
+      "beanRoastDepth"    : "Dark",
+      "beanBrand"         : "Java Planet",
+      "beanOrganic"       : true,
+      "beanFairTrade"     : true,
+      "beanDecaf"         : false,
+      "beanIdealDrinks"   : [
+          { "drinkID"     : "505",
+            "drinkName"   : "Espresso Romano",
+            "drinkFamily" : "Black Espresso",
+            "drinkBlurb"  : "An espresso Romano is a shot of espresso with a slice of lemon served on the side. The lemon can be run along the rim of the cup as a way to accentuate the espresso's sweetness.",
+            "drinkHotCold": "Hot",
+            "drinkWikiURL": "https://en.wikipedia.org/wiki/List_of_coffee_drinks#Espresso_Romano"
+          },
+          { "drinkID"     : "507",
+            "drinkName"   : "Ristretto",
+            "drinkFamily" : "Black Espresso",
+            "drinkBlurb"  : "Ristretto is traditionally a short shot of espresso made with the normal amount of ground coffee but extracted with about half the amount of water.",
+            "drinkHotCold": "Hot",
+            "drinkWikiURL": "https://en.wikipedia.org/wiki/List_of_coffee_drinks#Ristretto"
+          }
+        ]
+    },
+    {
+      "beanProductID"     : "002",
+      "beanProductName"   : "Espresso Dark Roast Arabica USDA Organic Decaf",
+      "beanSpecies"       : "Arabica",
+      "beanOriginRegion"  : "Latin America",
+      "beanOriginCountry" : "Guatemala",
+      "beanRoastDepth"    : "Dark",
+      "beanBrand"         : "Java Planet",
+      "beanOrganic"       : true,
+      "beanFairTrade"     : true,
+      "beanDecaf"         : true,
+      "beanIdealDrinks"   : [
+            { "drinkID"     : "516",
+              "drinkName"   : "Flat White",
+              "drinkFamily" : "Milked Espresso",
+              "drinkBlurb"  : "Flat white is an espresso with a similar proportion of coffee to milk as a latte and a cappuccino, the main difference being the texture of the milk and (in some regions) the number of espresso shots.",
+              "drinkHotCold": "Hot",
+              "drinkWikiURL": "https://en.wikipedia.org/wiki/List_of_coffee_drinks#Flat_white"
+            },
+            { "drinkID"     : "517",
+              "drinkName"   : "Galão",
+              "drinkFamily" : "Milked Espresso",
+              "drinkBlurb"  : "Galão is a hot drink from Portugal made of espresso and foamed milk. Similar to caffè latte or café au lait, it comes in a tall glass with plenty of milk.",
+              "drinkHotCold": "Hot",
+              "drinkWikiURL": "https://en.wikipedia.org/wiki/List_of_coffee_drinks#Gal.C3.A3o"
+            }
+        ]
+    },
+    {
+      "beanProductID"     : "003",
+      "beanProductName"   : "Brazil Peaberry",
+      "beanSpecies"       : "Arabica",
+      "beanOriginRegion"  : "Latin America",
+      "beanOriginCountry" : "Brazil",
+      "beanRoastDepth"    : "Medium",
+      "beanBrand"         : "Rising Sun",
+      "beanOrganic"       : false,
+      "beanFairTrade"     : false,
+      "beanDecaf"         : false,
+      "beanIdealDrinks"   : [
+              { "drinkID"     : "508",
+                "drinkName"   : "Antonccino",
+                "drinkFamily" : "Milked Espresso",
+                "drinkBlurb"  : "An antoccino is a single shot of espresso with steamed milk in a 1:1 ratio, served in an espresso cup.",
+                "drinkHotCold": "Hot",
+                "drinkWikiURL": "https://en.wikipedia.org/wiki/List_of_coffee_drinks#Antoccino"
+              },
+              { "drinkID"     : "509",
+                "drinkName"   : "Breve",
+                "drinkFamily" : "Milked Espresso",
+                "drinkBlurb"  : "Espresso made with a steamed mixture of half milk and half cream (i.e., half and half).",
+                "drinkHotCold": "Hot",
+                "drinkWikiURL": "https://en.wikipedia.org/wiki/List_of_coffee_drinks#Breve"
+              }
+        ]
+    },
+    ]

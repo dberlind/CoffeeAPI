@@ -1,0 +1,30 @@
+schemas:
+  bean: |
+      {
+        "type":"object",
+        "$schema": "http://json-schema.org/draft-04/schema",
+        "id": "http://jsonschema.net",
+        "required": true,
+        "properties": {
+             "beanProductID"   : "001",
+             "beanProductName" : {
+               "type": "string",
+               "required": true
+             },
+             "beanSpecies"       : "Arabica",
+             "beanOriginRegion"  : "Latin America",
+             "beanOriginCountry" : "Guatemala",
+             "beanRoastDepth"    : "Dark",
+             "beanBrand"         : "Java Planet",
+             "beanOrganic"       : true,
+             "beanFairTrade"     : true,
+             "beanDecaf"         : false,
+             "beanIdealDrinks"   : [
+                 { "drinkID"     : "505",
+                   "drinkName"   : "Espresso Romano",
+                   "drinkFamily" : "Black Espresso",
+                   "drinkBlurb"  : "An espresso Romano is a shot of espresso with a slice of lemon served on the side. The lemon can be run along the rim of the cup as a way to accentuate the espresso's sweetness.",
+                   "drinkHotCold": "Hot",
+                   "drinkWikiURL": "https://en.wikipedia.org/wiki/List_of_coffee_drink#Espresso_Romano"
+                 } ]
+          }
