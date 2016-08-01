@@ -42,7 +42,11 @@ schemas:
   get:
     description: Get a list of the different ways to prepare coffee
     queryParameters:
-      
+      drinkName:
+        description:  Ask the API by name of drink
+        required   :  false
+        type       :  string
+        example    :  "Espresso Romano"
   post:
     description: Add a new type of drink
     body:
