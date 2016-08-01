@@ -1,7 +1,7 @@
-"beans" : [
+"beansList" : [
     {
-      "beanProductID"     : "001",
-      "beanProductName"   : "Espresso Dark Roast Arabica USDA Organic",
+      "beanID"     : "001",
+      "beanName"   : "Espresso Dark Roast Arabica USDA Organic",
       "beanSpecies"       : "Arabica",
       "beanOriginRegion"  : "Latin America",
       "beanOriginCountry" : "Guatemala",

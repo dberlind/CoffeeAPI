@@ -1,0 +1,12 @@
+{
+      "beanName"          : "Espresso Dark Roast Arabica USDA Organic",
+      "beanSpecies"       : "Arabica",
+      "beanOriginRegion"  : "Latin America",
+      "beanOriginCountry" : "Guatemala",
+      "beanRoastDepth"    : "Dark",
+      "beanBrand"         : "Java Planet",
+      "beanOrganic"       : true,
+      "beanFairTrade"     : true,
+      "beanDecaf"         : false,
+      "beanIdealDrinksIDs": ["505", "507"]
+}

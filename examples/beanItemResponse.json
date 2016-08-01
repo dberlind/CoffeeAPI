@@ -1,0 +1,28 @@
+{
+      "beanID"     : "0001",
+      "beanName"   : "Espresso Dark Roast Arabica USDA Organic",
+      "beanSpecies"       : "Arabica",
+      "beanOriginRegion"  : "Latin America",
+      "beanOriginCountry" : "Guatemala",
+      "beanRoastDepth"    : "Dark",
+      "beanBrand"         : "Java Planet",
+      "beanOrganic"       : true,
+      "beanFairTrade"     : true,
+      "beanDecaf"         : false,
+      "beanIdealDrinks"   : [
+          { "drinkID"     : "505",
+            "drinkName"   : "Espresso Romano",
+            "drinkFamily" : "Black Espresso",
+            "drinkBlurb"  : "An espresso Romano is a shot of espresso with a slice of lemon served on the side. The lemon can be run along the rim of the cup as a way to accentuate the espresso's sweetness.",
+            "drinkHotCold": "Hot",
+            "drinkWikiURL": "https://en.wikipedia.org/wiki/List_of_coffee_drinks#Espresso_Romano"
+          },
+          { "drinkID"     : "507",
+            "drinkName"   : "Ristretto",
+            "drinkFamily" : "Black Espresso",
+            "drinkBlurb"  : "Ristretto is traditionally a short shot of espresso made with the normal amount of ground coffee but extracted with about half the amount of water.",
+            "drinkHotCold": "Hot",
+            "drinkWikiURL": "https://en.wikipedia.org/wiki/List_of_coffee_drinks#Ristretto"
+          }
+        ]
+    }

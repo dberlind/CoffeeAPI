@@ -1,0 +1,52 @@
+{
+"type"     :"object",
+"$schema"  : "http://json-schema.org/draft-04/schema",
+"id"       : "http://jsonschema.net",
+"required" : ["beanID", "beanName","beanBrand","beanDecaf"],
+"properties": {
+  "beanID"             : {
+    "type"             : "string",
+    "minlength"        : 4,
+    "maxlength"        : 4,
+    "pattern"          : "^\\d{4}$"
+  },
+  "beanName"           : {
+    "type"             : "string"
+  },
+  "beanSpecies"        : {
+    "type"             : "string"
+  },
+  "beanOriginRegion"   : {
+    "type"             : "string"
+  },
+  "beanOriginCountry"  : {
+    "type"             : "string"
+  },
+  "beanRoastDepth"     : {
+    "type"             : "string"
+  },
+  "beanBrand"          : {
+    "type"             : "string"
+  },
+  "beanOrganic"        : {
+    "type"             : "boolean"
+  },
+  "beanFairTrade"      : {
+    "type"             : "boolean"
+  },
+  "beanDecaf"          : {
+    "type"             : "boolean"
+  },
+  "beanIdealDrinkIDs"    : {
+    "type"             : "array",
+    "uniqueItems"      : true,
+    "items"            : {
+      "type"           : "string",
+      "minlength"      : 3,
+      "maxlength"      : 3,
+      "pattern"        : "^\\d{3}$"
+    }
+
+  }
+ }
+}

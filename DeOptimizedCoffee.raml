@@ -2,8 +2,12 @@
 title: CoffAPI
 version: v1
 baseUri: http://api.coffapi.com/v1
+
+
 /beans:
   description: A comprehensive listing of coffee bean types
+  post:
+    description: Add a new bean to the list
   get:
     description: Get a list of coffee beans based on name
     queryParameters:
@@ -23,7 +27,7 @@ baseUri: http://api.coffapi.com/v1
         required    : false
         type        : boolean
         example     : false
-    responses:
+    responses: # get response
       200:
         body:
           application/json:

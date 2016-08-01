@@ -1,0 +1,28 @@
+{
+  "type"     :"object",
+  "$schema"  : "http://json-schema.org/draft-04/schema",
+  "id"       : "http://jsonschema.net",
+  "required" : ["drinkName","drinkFamily","drinkBlurb","drinkHotCold","drinkWikiURL"],
+  "properties": {
+    "drinkName"   : {
+      "type": "string",
+      "minlength" : 3
+    },
+    "drinkFamily" : {
+      "type": "string",
+      "enum": ["Black Espresso", "Milked Espresso"]
+    },
+    "drinkBlurb"  : {
+      "type":  "string",
+      "minLength" : 20
+    },
+    "drinkHotCold": {
+      "type": "string",
+      "enum": ["Hot", "Cold"]
+    },
+    "drinkWikiURL": {
+      "type": "string",
+      "format": "uri"
+    }
+  }
+}

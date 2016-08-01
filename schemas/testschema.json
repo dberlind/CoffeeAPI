@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+
+  "definitions": {
+    "person": {
+      "type": "object",
+      "properties":  {
+        "lastName" : { "type": "string" },
+        "firstName": { "type": "string" },
+        "ssn"      : { "type": "string" },
+        "gender"   : { "type": "string" },
+        "height"   : { "type": "string"}
+      },
+      "required": ["lastName", "firstName", "ssn"]
+    }
+  },
+
+  "type": "object",
+
+  "properties": {
+    "student": { "$ref": "#/definitions/person" },
+    "teacher": { "$ref": "#/definitions/person" }
+  }
+}

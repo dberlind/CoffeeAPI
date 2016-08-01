@@ -1,0 +1,49 @@
+#%RAML 1.0
+title: CoffAPI
+version: v1
+baseUri: http://api.coffapi.com/v1
+
+schemas:
+   beanItemValidationSchema : !include schemas/beanItemValidationSchema.json
+   drinkItemValidationSchema : !include schemas/drinkItemValidationSchema.json
+
+/beans:
+  get:
+    description: Get a list of coffee beans based on name
+    queryParameters:
+      beanProductName:
+        description : "Name of the bean product from the manufacturer"
+        required    : false
+        minLength   : 3
+        type        : string
+        example     : "Espresso Dark Roast Arabica USDA Organic"
+      beanOrganic:
+        description : "Indication as to whether this specific bean product is USDA Organic"
+        required    : false
+        type        : boolean
+        example     : true
+      beanDecaf:
+        description : "Indication as to whether this specific bean product is decaffeinated"
+        required    : false
+        type        : boolean
+        example     : false
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/beanListResponse.json
+  post:
+    description: Add a new type of coffee bean, optionally with some ideal drinks to go with that bean
+    body:
+      application/json:
+        schema: beanItemValidationSchema
+        example: !include examples/beanItemPost.json
+/drinks:
+  get:
+    description: Get a list of the different ways to prepare coffee
+  post:
+    description: Add a new type of drink
+    body:
+      application/json:
+        schema: drinkItemValidationSchema
+        example: !include examples/drinkItemPost.json
