@@ -11,7 +11,7 @@ schemas:
   get:
     description: Get a list of coffee beans based on name
     queryParameters:
-      beanProductName:
+      beanName:
         description : "Name of the bean product from the manufacturer"
         required    : false
         minLength   : 3
@@ -38,6 +38,19 @@ schemas:
       application/json:
         schema: beanItemValidationSchema
         example: !include examples/beanItemPost.json
+    responses:
+      200:
+        body:
+          application/json:
+            example: { "message": "The bean has been properly entered" }
+  /{beanID}:
+    description: Retrieve a coffee bean entry by it's ID number
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: !include examples/beanItemResponse.json
 /drinks:
   get:
     description: Get a list of the different ways to prepare coffee
@@ -47,6 +60,11 @@ schemas:
         required   :  false
         type       :  string
         example    :  "Espresso Romano"
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/longDrinkList.json
   post:
     description: Add a new type of drink
     body:

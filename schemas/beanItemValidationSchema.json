@@ -5,7 +5,8 @@
 "required" : ["beanName","beanBrand","beanDecaf"],
 "properties": {
   "beanName"           : {
-    "type"             : "string"
+    "type"             : "string",
+    "minLength"        : 10
   },
   "beanSpecies"        : {
     "type"             : "string"
@@ -20,7 +21,8 @@
     "type"             : "string"
   },
   "beanBrand"          : {
-    "type"             : "string"
+    "type"             : "string",
+    "minLength"        : 6
   },
   "beanOrganic"        : {
     "type"             : "boolean"

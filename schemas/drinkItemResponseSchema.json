@@ -5,23 +5,21 @@
   "required" : true,
   "properties": {
     "drinkID" : {
-      "type": "string",
-      "minlength": 3,
-      "maxlength": 3,
-      "pattern"  : "^\\d{3}$"
+      "type": "string"
     },
     "drinkName"  : {
       "type": "string"
     },
     "drinkFamily" : {
-      "type": {"enum": ["Blacked Espresso", "Milked Espresso"]}
+      "type": "string",
+      "enum": ["Blacked Espresso", "Milked Espresso"]
     },
     "drinkBlurb"  : {
-      "type":  "string",
-      "minLength" : 20
+      "type":  "string"
     },
     "drinkHotCold": {
-      "type": {"enum": ["Hot", "Cold"]}
+      "type": "string",
+      "enum": ["Hot", "Cold"]
     },
     "drinkWikiURL": {
       "type": "string",

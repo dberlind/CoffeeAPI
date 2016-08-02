@@ -9,7 +9,6 @@
       "minlength" : 3
     },
     "drinkFamily" : {
-      "type": "string",
       "enum": ["Black Espresso", "Milked Espresso"]
     },
     "drinkBlurb"  : {
@@ -17,7 +16,6 @@
       "minLength" : 20
     },
     "drinkHotCold": {
-      "type": "string",
       "enum": ["Hot", "Cold"]
     },
     "drinkWikiURL": {
