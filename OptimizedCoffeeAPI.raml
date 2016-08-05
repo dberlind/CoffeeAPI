@@ -6,6 +6,7 @@ baseUri: http://api.coffapi.com/v1
 schemas:
    beanItemValidationSchema : !include schemas/beanItemValidationSchema.json
    drinkItemValidationSchema : !include schemas/drinkItemValidationSchema.json
+   drinkItemResponseSchema: !include schemas/drinkItemResponseSchema.json
 
 /beans:
   get:
@@ -44,7 +45,7 @@ schemas:
           application/json:
             example: { "message": "The bean has been properly entered" }
   /{beanID}:
-    description: Retrieve a coffee bean entry by it's ID number
+    description: Retrieve a <<resourcePathName|!singularize>> entry by its ID number
     get:
       responses:
         200:
@@ -71,3 +72,12 @@ schemas:
       application/json:
         schema: drinkItemValidationSchema
         example: !include examples/drinkItemPost.json
+  /{beanID}:
+    description: Retrieve a <<resourcePathName|!singularize>> entry by its ID number
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: drinkItemResponseSchema
+              example: !include examples/drinkItemResponse.json

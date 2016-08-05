@@ -2,7 +2,6 @@
   "type"     :"object",
   "$schema"  : "http://json-schema.org/draft-04/schema",
   "id"       : "http://jsonschema.net",
-  "required" : true,
   "properties": {
     "drinkID" : {
       "type": "string"
@@ -12,7 +11,7 @@
     },
     "drinkFamily" : {
       "type": "string",
-      "enum": ["Blacked Espresso", "Milked Espresso"]
+      "enum": ["Black Espresso", "Milked Espresso"]
     },
     "drinkBlurb"  : {
       "type":  "string"
